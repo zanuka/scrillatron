@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-content pager="true" #slides>
+    <ion-slides mode="ios" pager="ios" scrollbar="ios">
+      <ion-slide>
+        <h1>Welcome to ScrillaTron</h1>
+        <ion-button
+          (click)="next()"
+          expand="button"
+          fill="clear"
+          shape="round"
+          color="light"
+        >
+          Configure your App
+        </ion-button>
+      </ion-slide>
+      <ion-slide>
+        <h1>Setup Your App</h1>
+        <ion-list>
+          <ion-list>
+            <ion-radio-group name="currency" value="NZD">
+              <ion-list-header>
+                <ion-label>Currency</ion-label>
+              </ion-list-header>
+              <ion-item>
+                <ion-label>EUR</ion-label>
+                <ion-radio value="eur"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Dolla</ion-label>
+                <ion-radio value="usd"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Pound</ion-label>
+                <ion-radio value="pnd"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+        </ion-list>
+        <ion-button
+          (click)="saveAndStart()"
+          expand="button"
+          shape="round"
+          color="light"
+        >
+          Get Started
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+</ion-content>
